@@ -12,16 +12,16 @@ const AboutParagraph = styled.p`
 `
  
 const About = ({ about }) => {
-    if(about) {
-        var about = about.description
-    }
+    // if(about) {
+    //     var about = about.description
+    // }
     return (
         <FlexContainer>
             <Header>
                 <h2>About</h2>
             </Header>
             <Container>
-                <AboutParagraph>{about}</AboutParagraph>
+                <AboutParagraph>{about && about.description}</AboutParagraph>
             </Container>
         </FlexContainer> 
     )
