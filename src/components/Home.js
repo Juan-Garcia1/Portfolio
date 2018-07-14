@@ -6,9 +6,11 @@ import { Container } from '../Styles/Container'
 
 // #0f2027, #203a43
 
+import chicagoImg from '../images/chicago.jpg'
+
 const Header = styled.header`
     height: 70vh;
-    background: linear-gradient(0deg, rgba(15, 32, 39,.8), rgba(32, 58, 67,.8)), url('../../images/chicago.jpg') no-repeat center center;
+    background: linear-gradient(0deg, rgba(15, 32, 39,.8), rgba(32, 58, 67,.8)), url(${chicagoImg}) no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
