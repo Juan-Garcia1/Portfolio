@@ -19,7 +19,7 @@ class App extends Component {
     }
 
      fetchData() {
-         axios.get('http://localhost:3000/ResumeData.json')
+         axios.get('ResumeData.json')
          .then(res => {
              this.setState({
                  data: res.data
