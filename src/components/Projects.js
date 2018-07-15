@@ -83,8 +83,7 @@ const FlexContainer = Container.extend`
         }
     }
 `
-// import img from '../../public/images'
-// previous ./images/
+
 const Projects = ({ projects }) => {   
     if(projects) {
         var projects = projects.map((project, i) => (
