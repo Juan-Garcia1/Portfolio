@@ -89,7 +89,7 @@ const Projects = ({ projects }) => {
         var projects = projects.map((project, i) => (
             <Project key={i} >
                     <a href={project.url} target='_blank'>
-                        <ProjectThumbnail src={`../../images/${project.thumbnail}`} />
+                        <ProjectThumbnail src={`./images/${project.thumbnail}`} />
                     </a>
                     <ProjectContent>
                         <ProjectTitle>{project.name}</ProjectTitle>
