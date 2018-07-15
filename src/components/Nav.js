@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 import { Container } from '../Styles/Container'
 import { NavBar
@@ -22,13 +22,13 @@ const Flex = Container.extend`
 `
 
 class Nav extends Component {
-    constructor(props) {
-        super(props)
+    // constructor(props) {
+        // super(props)
         // this.state = {
         //     isOpen: false
         // }
         // this.handleToggle = this.handleToggle.bind(this)
-    }
+    // }
 
     // handleToggle() {
     //     const { isOpen } = this.state
