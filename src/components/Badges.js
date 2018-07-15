@@ -77,7 +77,7 @@ class Badges extends Component {
                         <div>
                             <h2 style={{ fontWeight:'400', color: '#203a43' }}>Badges</h2>
                             <BadgeDescription>
-                                I've earned {totalBadges} badges on <a href='https://teamtreehouse.com/' target='_blank'><strong><i>teamtreehouse</i></strong></a> so far.
+                                I've earned {totalBadges} badges on <a href='https://teamtreehouse.com/' target='_blank' rel='noopener noreferrer'><strong><i>teamtreehouse</i></strong></a> so far.
                             </BadgeDescription>
                         </div>
                         <FlexBadges>
