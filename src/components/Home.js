@@ -6,7 +6,7 @@ import { Container } from '../Styles/Container'
 
 // #0f2027, #203a43
 
-import chicagoImg from '../images/chicago.jpg'
+import chicagoImg from '../img/chicago.jpg'
 
 const Header = styled.header`
     height: 70vh;
