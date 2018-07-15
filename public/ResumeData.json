@@ -83,7 +83,7 @@
         {
             "url": "https://juan-garcia1.github.io/Facebook-Design/",
             "thumbnail" : "facebook-design.png",
-            "name": "FaceBook Design"
+            "name": "Facebook Design"
         },
         {
             "url": "https://codepen.io/-J0hn-/full/ZvaQKe",
@@ -94,6 +94,11 @@
             "url": "https://codepen.io/-J0hn-/full/EbWQqP",
             "thumbnail": "Agency.png",
             "name": "Agency Website"
+        },
+        {
+            "url": "http://catherinedelcin.com/",
+            "thumbnail": "catherinedelcin.com.png",
+            "name": "Client Site"
         }
     ],
     "testimonials": [
