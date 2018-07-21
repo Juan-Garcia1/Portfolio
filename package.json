@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://juan-garcia1.github.io/-portfolio-",
+  "homepage": "http://juan-garcia1.github.io/portfolio",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
