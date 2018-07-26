@@ -1,26 +1,16 @@
-import styled from 'styled-components'
-import { primaryColor } from './Global';
+import styled from "styled-components";
+import { primaryColor } from "./Global";
 
 export const NavBar = styled.nav`
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 18px 0;
-    z-index: 1000;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 8px;
-        // background-color: #2c5364;
-        background: ${primaryColor};
-    }
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 0;
+  z-index: 1000;
+  border-top: solid 8px ${primaryColor};
 `;
-// background: linear-gradient(20deg, #0f2027, #203a43);
 
 // export const HamburgerIcon = styled.button`
 //     background: none;
