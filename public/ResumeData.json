@@ -76,9 +76,14 @@
   ],
   "projects": [
     {
+      "url": "https://juan-garcia1.github.io/cryptocurrency-react-web-app-",
+      "thumbnail": "cryptocurrency-web-app.PNG",
+      "name": "Cryptocurrency - React"
+    },
+    {
       "url": "https://codepen.io/-J0hn-/full/aVaLQP",
       "thumbnail": "Design-Concept.png",
-      "name": "IMDB Design Concept"
+      "name": "IMDB Design - React"
     },
     {
       "url": "https://juan-garcia1.github.io/restaurant/",
