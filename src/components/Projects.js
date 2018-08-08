@@ -11,7 +11,6 @@ const Project = styled.figure`
   @media (min-width: 800px) {
     margin: 0px;
     &:hover > figcaption {
-      // transform: translateY(0);
       transform: translateX(0);
     }
   }
@@ -27,7 +26,6 @@ const ProjectContent = styled.figcaption`
   bottom: 0;
   left: 0;
   width: 100%;
-  // height: auto;
   background: #fff;
   transform: translateY(0);
   transition: transform 0.4s ease;
@@ -36,8 +34,6 @@ const ProjectContent = styled.figcaption`
     width: 55%;
     height: 20%;
     bottom: initial;
-    // transform: translateY(-100%);
-    // box-shadow: 0 1px 10px gray;
     transform: translateY(-40%);
     transform: translateX(-100%);
     display: flex;
@@ -56,8 +52,6 @@ const ProjectTitle = styled.p`
   text-align: center;
   line-height: 30px;
   border-left: solid 5px ${primaryColor};
-  // border-left: solid 5px #0f2027;
-  // border-right: solid 5px #0f2027;
   border-right: solid 5px ${primaryColor};
   padding-left: 0.8rem;
   text-transform: capitalize;
