@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import { Container } from "../Styles/Container";
-import { primaryColor } from "../Styles/Global";
+import { Container } from "../Styles/Container"
+import { primaryColor } from "../Styles/Global"
 
 const Project = styled.figure`
   margin: 10px 0;
@@ -14,12 +14,12 @@ const Project = styled.figure`
       transform: translateX(0);
     }
   }
-`;
+`
 const ProjectThumbnail = styled.img`
   width: 100%;
   height: 100%;
   display: block;
-`;
+`
 const ProjectContent = styled.figcaption`
   padding: 10px 0;
   position: absolute;
@@ -43,7 +43,7 @@ const ProjectContent = styled.figcaption`
       border-left: none;
     }
   }
-`;
+`
 const ProjectTitle = styled.p`
   color: ${primaryColor};
   margin: 0;
@@ -60,7 +60,7 @@ const ProjectTitle = styled.p`
     font-size: 1.3rem;
     font-weight: 400;
   }
-`;
+`
 
 const FlexContainer = Container.extend`
   padding-top: 80px;
@@ -72,10 +72,10 @@ const FlexContainer = Container.extend`
   }
   @media (min-width: 800px) {
     > * {
-      flex-basis: 40%;
+      flex-basis: 50%;
     }
   }
-`;
+`
 
 const Projects = ({ projects }) => {
   if (projects) {
@@ -88,13 +88,13 @@ const Projects = ({ projects }) => {
           <ProjectTitle>{project.name}</ProjectTitle>
         </ProjectContent>
       </Project>
-    ));
+    ))
   }
   return (
     <section style={{ background: `${primaryColor}` }}>
       <FlexContainer>{projects}</FlexContainer>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
