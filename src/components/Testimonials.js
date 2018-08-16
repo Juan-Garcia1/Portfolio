@@ -28,7 +28,7 @@ const Testimonials = ({ testimonials }) => {
           style={{
             color: "hsl(100,5%, 65%)",
             fontWeight: "600",
-            lineHeight: "1.5"
+            lineHeight: "1.4"
           }}
           dangerouslySetInnerHTML={createMarkup(t.quote)}
         />
