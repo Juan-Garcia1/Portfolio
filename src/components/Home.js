@@ -27,7 +27,7 @@ const HeaderTitle = styled.h2`
     text-transform: uppercase;
     letter-spacing: 5px;
     @media(min-width: 800px) {
-        font-size: 4.2rem;
+        font-size: 5.1rem;
     }
 `;
 
