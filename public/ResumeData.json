@@ -74,6 +74,11 @@
   ],
   "projects": [
     {
+      "url": "https://www.coynecollege.edu/test-a-trade/",
+      "thumbnail": "Coyne-test-a-trade.JPG",
+      "name": "Test a Trade Event Lander"
+    },
+    {
       "url": "https://ohiobusinesscollege.edu/truck-driving-academy-2/",
       "thumbnail": "cdl program.png",
       "name": "CDL Program"
