@@ -74,6 +74,11 @@
   ],
   "projects": [
     {
+      "url": "https://florida-academy.edu/programs/beauty-wellness/mud-florida/",
+      "thumbnail": "florida-academy-mud-program.JPG",
+      "name": "MUD Program (Page)"
+    },
+    {
       "url": "https://www.coynecollege.edu/test-a-trade/",
       "thumbnail": "Coyne-test-a-trade.JPG",
       "name": "Test a Trade Event Lander"
