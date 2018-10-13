@@ -74,6 +74,11 @@
   ],
   "projects": [
     {
+      "url": "https://nortonnorris.com/production/",
+      "thumbnail": "diy-kit-lander.png",
+      "name": "DIY Social Kit Lander"
+    },
+    {
       "url": "https://florida-academy.edu/programs/beauty-wellness/mud-florida/",
       "thumbnail": "florida-academy-mud-program.JPG",
       "name": "MUD Program (Page)"
