@@ -74,6 +74,11 @@
   ],
   "projects": [
     {
+      "url": "https://womenofhvac.com",
+      "thumbnail": "womenofhvac.png",
+      "name": "Women of HVAC (Site)"
+    },
+    {
       "url": "https://nortonnorris.com/production/",
       "thumbnail": "diy-kit-lander.png",
       "name": "DIY Social Kit Lander"
