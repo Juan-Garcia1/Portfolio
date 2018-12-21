@@ -4,7 +4,6 @@
     "title": "Front-End Developer",
     "bio": "<p>I am a Chicago native who enjoys reading and keeping up to date with web development. See my most recent Pens on <a href=\"https://codepen.io/collection/nZpagN/\">Codepen</a>.</p>"
   },
-
   "social": [
     {
       "name": "Github",
@@ -74,6 +73,11 @@
   ],
   "projects": [
     {
+      "url": "https://juan-garcia1.github.io/Huddle-landing-page/",
+      "thumbnail": "huddle-landing-page.jpg",
+      "name": "Huddle Landing Page"
+    },
+    {
       "url": "https://womenofhvac.org",
       "thumbnail": "womenofhvac.png",
       "name": "Women of HVAC (Site)"
@@ -122,11 +126,6 @@
       "url": "https://codepen.io/-J0hn-/full/ZvaQKe",
       "thumbnail": "red-bull-website.png",
       "name": "Redbull Design Concept"
-    },
-    {
-      "url": "https://codepen.io/-J0hn-/full/EbWQqP",
-      "thumbnail": "Agency.png",
-      "name": "Agency Website"
     },
     {
       "url": "http://catherinedelcin.com/",
