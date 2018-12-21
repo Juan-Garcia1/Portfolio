@@ -8,6 +8,7 @@ const Project = styled.figure`
   margin: 10px 0;
   overflow: hidden;
   position: relative;
+  max-height: 300px;
   @media (min-width: 800px) {
     margin: 0px;
     &:hover > figcaption {
@@ -19,6 +20,7 @@ const ProjectThumbnail = styled.img`
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
 `
 const ProjectContent = styled.figcaption`
   padding: 10px 0;
