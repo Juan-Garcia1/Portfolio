@@ -78,6 +78,11 @@
       "name": "Huddle Landing Page"
     },
     {
+      "url": "https://tvmdb.netlify.com/",
+      "thumbnail": "tvmdb.png",
+      "name": "Tvmdb - React & Redux"
+    },
+    {
       "url": "https://womenofhvac.org",
       "thumbnail": "womenofhvac.png",
       "name": "Women of HVAC (Site)"
@@ -88,29 +93,14 @@
       "name": "DIY Social Kit Lander"
     },
     {
-      "url": "https://florida-academy.edu/programs/beauty-wellness/mud-florida/",
-      "thumbnail": "florida-academy-mud-program.JPG",
-      "name": "MUD Program (Page)"
-    },
-    {
       "url": "https://www.coynecollege.edu/test-a-trade/",
       "thumbnail": "Coyne-test-a-trade.JPG",
       "name": "Test a Trade Event Lander"
     },
     {
-      "url": "https://ohiobusinesscollege.edu/truck-driving-academy-2/",
-      "thumbnail": "cdl program.png",
-      "name": "CDL Program"
-    },
-    {
       "url": "https://juan-garcia1.github.io/cryptocurrency-react-web-app-",
       "thumbnail": "cryptocurrency-web-app.png",
       "name": "Cryptocurrency - React"
-    },
-    {
-      "url": "https://codepen.io/-J0hn-/full/aVaLQP",
-      "thumbnail": "Design-Concept.png",
-      "name": "IMDB Design - React"
     },
     {
       "url": "https://juan-garcia1.github.io/restaurant/",
