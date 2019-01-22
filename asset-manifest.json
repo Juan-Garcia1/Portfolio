@@ -1,5 +1,12 @@
 {
-  "main.js": "static/js/main.9bd193ef.js",
-  "main.js.map": "static/js/main.9bd193ef.js.map",
-  "static\\media\\chicago.jpg": "static/media/chicago.151c53c1.jpg"
+  "main.js": "/portfolio/static/js/main.14577571.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.14577571.chunk.js.map",
+  "static/js/1.8c8b05aa.chunk.js": "/portfolio/static/js/1.8c8b05aa.chunk.js",
+  "static/js/1.8c8b05aa.chunk.js.map": "/portfolio/static/js/1.8c8b05aa.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
+  "static/media/chicago.jpg": "/portfolio/static/media/chicago.151c53c1.jpg",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.6bfb393b43474d1704e1ec1c1450e193.js": "/portfolio/precache-manifest.6bfb393b43474d1704e1ec1c1450e193.js",
+  "service-worker.js": "/portfolio/service-worker.js"
 }
