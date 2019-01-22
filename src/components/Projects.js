@@ -81,9 +81,9 @@ const FlexContainer = Container.extend`
 
 const Projects = ({ projects }) => {
   if (projects) {
-    var projects = projects.map((project, i) => (
+    var projectsList = projects.map((project, i) => (
       <Project key={i}>
-        <a href={project.url} target="_blank">
+        <a href={project.url} target="_blank" rel="noopener noreferrer">
           <ProjectThumbnail src={`./images/${project.thumbnail}`} />
         </a>
         <ProjectContent>
@@ -94,7 +94,7 @@ const Projects = ({ projects }) => {
   }
   return (
     <section style={{ background: `${primaryColor}` }}>
-      <FlexContainer>{projects}</FlexContainer>
+      <FlexContainer>{projectsList}</FlexContainer>
     </section>
   )
 }

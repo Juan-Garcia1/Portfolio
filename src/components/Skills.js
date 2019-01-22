@@ -36,8 +36,8 @@ const SkillLevel = styled.div`
 `
 
 const Skills = ({ skills }) => {
-    if(skills) {
-        var skills =  skills.map((skill, i) => (
+    if (skills) {
+        var skillsList = skills.map((skill, i) => (
             <li key={i}>
                 <SkillName>{skill.name}</SkillName>
                 <div>
@@ -49,7 +49,7 @@ const Skills = ({ skills }) => {
     return (
         <Section>
             <Container>
-                <SkillList>{skills}</SkillList>
+                <SkillList>{skillsList}</SkillList>
             </Container>
         </Section>
     )

@@ -22,7 +22,7 @@ const TestimonialsHeader = Header.extend`
 
 const Testimonials = ({ testimonials }) => {
   if (testimonials) {
-    var testimonials = testimonials.map((t, i) => (
+    var testimonialsList = testimonials.map((t, i) => (
       <Fragment key={i}>
         <div
           style={{
@@ -47,7 +47,7 @@ const Testimonials = ({ testimonials }) => {
   return (
     <FlexContainer>
       <Container>
-        <Quote>{testimonials}</Quote>
+        <Quote>{testimonialsList}</Quote>
       </Container>
       <TestimonialsHeader>
         <h2>Testimonials</h2>
