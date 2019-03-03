@@ -73,19 +73,9 @@
   ],
   "projects": [
     {
-      "url": "https://juan-garcia1.github.io/Huddle-landing-page/",
-      "thumbnail": "huddle-landing-page.jpg",
-      "name": "Huddle Landing Page"
-    },
-    {
       "url": "https://tvmdb.netlify.com/",
       "thumbnail": "tvmdb.png",
       "name": "Tvmdb - React & Redux"
-    },
-    {
-      "url": "https://chingu-voyage7.github.io/Geckos-Team-14/",
-      "thumbnail": "trello-clone.png",
-      "name": "Trello clone - React"
     },
     {
       "url": "https://juan-garcia1.github.io/Fylo-landing-page/",
@@ -93,19 +83,24 @@
       "name": "Fylo Landing Page"
     },
     {
+      "url": "https://chingu-voyage7.github.io/Geckos-Team-14/",
+      "thumbnail": "trello-clone.png",
+      "name": "Trello clone - React"
+    },
+    {
       "url": "https://juan-garcia1.github.io/restaurant/",
       "thumbnail": "restaurant.png",
       "name": "Restaurant Design"
     },
     {
-      "url": "https://womenofhvac.org",
-      "thumbnail": "womenofhvac.png",
-      "name": "Women of HVAC (Site)"
-    },
-    {
       "url": "https://codepen.io/-J0hn-/full/ZvaQKe",
       "thumbnail": "red-bull-website.png",
       "name": "Redbull Design Concept"
+    },
+    {
+      "url": "https://womenofhvac.org",
+      "thumbnail": "womenofhvac.png",
+      "name": "Women of HVAC (Site)"
     }
   ],
   "testimonials": [
