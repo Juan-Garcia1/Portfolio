@@ -2,7 +2,7 @@
   "main": {
     "name": "Juan Garcia",
     "title": "Front-End Developer",
-    "bio": "<p>I am a Chicago native who enjoys reading and keeping up to date with web development. See my most recent Pens on <a href=\"https://codepen.io/collection/nZpagN/\">Codepen</a>.</p>"
+    "bio": "<p>I am a Chicago native who enjoys reading and keeping up to date with web development. See my most recent Pens on <a href=\"https://codepen.io/-J0hn-/collections/popular/\">Codepen</a>.</p>"
   },
   "social": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "Codepen",
-      "url": "https://codepen.io/-J0hn-/pens/public/",
+      "url": "https://codepen.io/-J0hn-/collections/popular/",
       "className": "fa fa-codepen"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "name": "WordPress",
-      "level": 60
+      "level": 80
     }
   ],
   "projects": [
@@ -83,29 +83,9 @@
       "name": "Tvmdb - React & Redux"
     },
     {
-      "url": "https://womenofhvac.org",
-      "thumbnail": "womenofhvac.png",
-      "name": "Women of HVAC (Site)"
-    },
-    {
       "url": "https://juan-garcia1.github.io/Fylo-landing-page/",
       "thumbnail": "fylo-landing-page.jpg",
       "name": "Fylo Landing Page"
-    },
-    {
-      "url": "https://nortonnorris.com/production/",
-      "thumbnail": "diy-kit-lander.png",
-      "name": "DIY Social Kit Lander"
-    },
-    {
-      "url": "https://www.coynecollege.edu/test-a-trade/",
-      "thumbnail": "Coyne-test-a-trade.JPG",
-      "name": "Test a Trade Event Lander"
-    },
-    {
-      "url": "https://juan-garcia1.github.io/cryptocurrency-react-web-app-",
-      "thumbnail": "cryptocurrency-web-app.png",
-      "name": "Cryptocurrency - React"
     },
     {
       "url": "https://juan-garcia1.github.io/restaurant/",
@@ -113,14 +93,14 @@
       "name": "Restaurant Design"
     },
     {
+      "url": "https://womenofhvac.org",
+      "thumbnail": "womenofhvac.png",
+      "name": "Women of HVAC (Site)"
+    },
+    {
       "url": "https://codepen.io/-J0hn-/full/ZvaQKe",
       "thumbnail": "red-bull-website.png",
       "name": "Redbull Design Concept"
-    },
-    {
-      "url": "http://catherinedelcin.com/",
-      "thumbnail": "catherinedelcin.com.png",
-      "name": "Catherine Delcin"
     }
   ],
   "testimonials": [
