@@ -4,7 +4,7 @@ import axios from "axios";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
-import Skills from "./components/Skills";
+// import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Badges from "./components/Badges";
@@ -45,7 +45,7 @@ class App extends Component {
         >
           <Home main={data.main} social={data.social} />
           <About about={data.about} />
-          <Skills skills={data.skills} />
+          {/* <Skills skills={data.skills} /> */}
           <Projects projects={data.projects} />
           <Testimonials testimonials={data.testimonials} />
           <Badges />
