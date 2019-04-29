@@ -17,10 +17,10 @@
   <header>
     <div class="container">
       <nav>
+        <h1 class="logo"><a class="logo__link" href="./index.html">Juan Garcia Dev</a></h1>
         <ul>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Projects</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
+          <li><a class="nav-link nav-link-2" href="#projects">Projects</a></li>
+          <li><a class="nav-link nav-link-3" href="#experience">Experience</a></li>
         </ul>
       </nav>
     </div>
@@ -31,16 +31,12 @@
       <div>
         <h1 class="hero__title">Front End Developer</h1>
         <p class="hero__intro">Chicago native who enjoys reading and keeping up to date with web development.</p>
-        <a href="#" class="btn btn--primary">Latest Work</a>
+        <a href="#projects" class="btn btn--primary">Latest Work</a>
       </div>
     </div>
   </div>
 
-  <section>
-    about section
-  </section>
-
-  <section class="project-section">
+  <section id="projects" class="project-section">
     <figure class="project">
       <img class="project__thumbnail" src="./images/tvmdb/tvmdb.png" alt="tvmdb website">
       <figcaption class="project__content">
@@ -98,9 +94,28 @@
   </section>
   <!-- project-section -->
 
-  <!-- <section class="contact-section">
-    contact section goes here
-  </section> -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h2 class="experience-section__header">Experience</h2>
+      <ul>
+        <li class="job">
+          <h3 class="job__title">Front End Developer</h3>
+          <span class="job__duration">January 2019 - Present</span>
+          <p class="job__description">Work with a distributed team with creating mock-ups for new features. Support
+            existing HTML, CSS and JavaScript front end code. Create HTML and CSS based on the created mock-ups.
+            Work along side QA to make sure the site(s) are working properly on all browsers.
+          </p>
+        </li>
+        <li class="job">
+          <h3 class="job__title">WordPress Developer</h3>
+          <span class="job__duration">March 2018 - November 2018</span>
+          <p class="job__description">Create landing pages and maintain content using HTML and CSS. Create forms using
+            the Gravity Forms plugin and integrate zapier to store data into a Google spreadsheet when visitors filled
+            out the forms when they visited the landing pages.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <footer>
     <ul class="contact-list">
@@ -112,6 +127,11 @@
             aria-hidden="true"></i></a></li>
     </ul>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="./js/index.js"></script>
 
 </body>
 

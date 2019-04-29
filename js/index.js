@@ -1,5 +1,24 @@
 $(document).ready(function () {
 
+  // HOME PAGE
+
+  // highlight link when user scrolls to its corresponding section
+  let navController = new ScrollMagic.Controller({ globalSceneOptions: { duration: "100%" } });
+
+  new ScrollMagic.Scene({ triggerElement: "#about" })
+    .setClassToggle(".nav-link-1", "active-nav-link")
+    .addTo(navController)
+
+  new ScrollMagic.Scene({ triggerElement: "#projects" })
+    .setClassToggle(".nav-link-2", "active-nav-link")
+    .addTo(navController)
+
+  new ScrollMagic.Scene({ triggerElement: "#experience" })
+    .setClassToggle(".nav-link-3", "active-nav-link")
+    .addTo(navController)
+
+
+  // SINGLE PAGE PROJECTS SLIDER
   $('.slider-single').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

@@ -3,6 +3,10 @@
 
 $primary-color: rgb(32, 58, 67);
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -59,20 +63,51 @@ p {
 
 header {
   border-top: solid 6px $primary-color;
+  padding: 10px 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    .logo {
+      flex-basis: 100%;
+      margin: 0;
+      font-size: 1.2rem;
+      text-align: center;
+      &__link {
+        color: $primary-color
+      }
+    }
     ul {
       display: flex;
       .nav-link {
         display: block;
         padding: 10px 8px;
-        color: rgb(77, 77, 77);
+        color: $primary-color;
         &:hover {
-          color: $primary-color;
+          font-weight: 600;
         }
       }
     }
+  }
+}
+
+.active-nav-link {
+  position: relative;
+  font-weight: 600;
+  &::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: $primary-color;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
 
@@ -197,6 +232,27 @@ header {
   }
 }
 
+.experience-section {
+  padding: 40px 0;
+  &__header {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+.job {
+  margin-bottom: 30px;
+  &__title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  &__duration {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 14px;  
+  }
+}
+
 footer {
   height: 80px;
   background: #203A43;
@@ -220,7 +276,11 @@ footer {
 
 @media(min-width: 768px) {
   header nav {
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+  .logo {
+    flex-basis: initial !important;
+    font-size: 1.1rem;
   }
   .hero__title {
     font-size: 3rem;
