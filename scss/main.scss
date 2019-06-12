@@ -18,11 +18,16 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
 }
 
 p {
@@ -57,9 +62,8 @@ p {
 
 .btn--secondary:hover {
   background: $primary-color;
-  color: #fff
+  color: #fff;
 }
-
 
 header {
   border-top: solid 6px $primary-color;
@@ -79,7 +83,7 @@ header {
       font-size: 1.2rem;
       text-align: center;
       &__link {
-        color: $primary-color
+        color: $primary-color;
       }
     }
     ul {
@@ -148,7 +152,7 @@ header {
     opacity: 0;
     transform: scale(0.5);
     transition-property: opacity, transform;
-    transition-duration: .4s;
+    transition-duration: 0.4s;
     background: transparentize($primary-color, 0.05);
     &-wrapper {
       height: inherit;
@@ -171,8 +175,6 @@ header {
   color: #fff;
 }
 
-
-
 .gallery {
   background: rgb(10, 10, 10);
   img {
@@ -185,7 +187,7 @@ header {
   img {
     width: 100%;
   }
-} 
+}
 
 .slider-nav img {
   width: 100%;
@@ -253,13 +255,13 @@ header {
   &__duration {
     color: $primary-color;
     font-weight: 600;
-    font-size: 14px;  
+    font-size: 14px;
   }
 }
 
 footer {
   height: 80px;
-  background: #203A43;
+  background: #203a43;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,13 +274,13 @@ footer {
       margin: 10px;
       font-size: 1.4rem;
       &:hover {
-        color: #4D6973
+        color: #4d6973;
       }
     }
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   header nav {
     justify-content: space-between;
   }
@@ -290,6 +292,7 @@ footer {
     font-size: 3rem;
   }
   .project-section {
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     .project {
