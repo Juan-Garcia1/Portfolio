@@ -1,148 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>Juan Garcia | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <title>Juan Garcia | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <h1 class="logo"><a class="logo__link" href="./index.html">Juan Garcia Dev</a></h1>
-        <ul>
-          <li><a class="nav-link nav-link-2" href="#projects">Projects</a></li>
-          <li><a class="nav-link nav-link-3" href="#experience">Experience</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <div class="container">
+  <body>
     <div class="hero">
-      <div>
-        <h1 class="hero__title">Front End Developer</h1>
-        <p class="hero__intro">Chicago native who enjoys reading and keeping up to date with web development.</p>
-        <a href="#projects" class="btn btn--primary">Latest Work</a>
+      <div class="hero__content">
+        <h1 class="title title--red">Front End Web Developer</h1>
+      </div>
+      <button class="view-projects-btn">
+        <span>view projects</span>
+        <img src="./images/assets/bottom_arrow.svg" alt="view projects" />
+      </button>
+      <div class="social-links">
+        <a
+          href="https://github.com/Juan-Garcia1"
+          target="_blank"
+          class="social-link"
+          ><i class="fa fa-github social-link-icon"></i
+        ></a>
+        <a
+          href="https://codepen.io/-J0hn-/pens/popular"
+          target="_blank"
+          class="fa fa-codepen social-link"
+          ><i class="social-link-icon"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/juan-garcia1/"
+          target="_blank"
+          class="social-link"
+          ><i class="fa fa-linkedin social-link-icon"></i
+        ></a>
       </div>
     </div>
-  </div>
 
-  <section id="projects" class="project-section">
-    <figure class="project">
-      <img class="project__thumbnail" src="./images/rosa/restaurant.png" alt="Restaurant site">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="rosa.html" class="project__title">Rosa</a></h2>
-        </div>
-        <!-- project__content-wrapper -->
-      </figcaption>
-    </figure>
-    <figure class="project">
-      <img class="project__thumbnail" src="./images/tvmdb/tvmdb.png" alt="tvmdb website">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="tvmdb.html" class="project__title">TVMdb</a></h2>
-        </div>
-        <!-- project__content-wrapper -->
-      </figcaption>
-    </figure>
-    <!-- <figure class="project">
-      <img class="project__thumbnail" src="./images/fylo/fylo-landing-page.jpg" alt="fylo landing page">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="fylo.html" class="project__title">Fylo landing page</a></h2>
-        </div>
-        
-      </figcaption>
-    </figure> -->
-    <figure class="project">
-      <img class="project__thumbnail" src="./images/trello/trello-clone.png" alt="Trello">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="trello-clone.html" class="project__title">Trello Clone</a></h2>
-        </div>
-        <!-- project__content-wrapper -->
-      </figcaption>
-    </figure>
-    
-    <!-- <figure class="project">
-      <img class="project__thumbnail" src="./images/doccafe/doccafe-img .png" alt="DocCafe">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="doccafe.html" class="project__title">DocCafe</a></h2>
-        </div>
-        
-      </figcaption>
-    </figure> -->
-    <!-- <figure class="project">
-      <img class="project__thumbnail" src="./images/redbull/red-bull-website.png" alt="Redbull">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="redbull.html" class="project__title">Redbull</a></h2>
-        </div>
-         project__content-wrapper 
-      </figcaption>
-    </figure> -->
-    <!-- <figure class="project">
-      <img class="project__thumbnail" src="./images/women-of-hvac/womenofhvac.png" alt="women of hvac">
-      <figcaption class="project__content">
-        <div class="project__content-wrapper">
-          <h2><a href="women-of-hvac.html" class="project__title">Women of HVAC</a></h2>
-        </div>
-        
-      </figcaption>
-    </figure> -->
-  </section>
-  <!-- project-section -->
+    <section class="projects-section" id="projects">
+      <h2 class="title title--white">Projects</h2>
 
-  <section class="experience-section" id="experience">
-    <div class="container">
-      <h2 class="experience-section__header">Experience</h2>
       <ul>
-        <li class="job">
-          <h3 class="job__title">Contract Front End Developer</h3>
-          <span class="job__duration">January 2019 - May 2019</span>
-          <p class="job__description">Work with a distributed team with creating mock-ups for new features. Support
-            existing HTML, CSS and JavaScript front end code. Create HTML and CSS based on the created mock-ups.
-            Work along side QA to make sure the site(s) are working properly on all browsers.
-          </p>
+        <li>
+          <figure class="project">
+            <img
+              class="project__thumbnail"
+              src="./images/rosa/restaurant.png"
+              alt="Restaurant site"
+            />
+            <figcaption class="project__content">
+              <div class="project__content-wrapper">
+                <h2 class="project__title">Rosa</h2>
+                <p>
+                  A fictional restaurant where your're able to make
+                  reservations, read their latest blogs and discover an exciting
+                  menu.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://juan-garcia1.github.io/restaurant/"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                  <a
+                    href="https://github.com/Juan-Garcia1/restaurant"
+                    target="_blank"
+                    class="project-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </figcaption>
+          </figure>
         </li>
-        <li class="job">
-          <h3 class="job__title">WordPress Developer</h3>
-          <span class="job__duration">March 2018 - November 2018</span>
-          <p class="job__description">Create landing pages and maintain content using HTML and CSS. Create forms using
-            the Gravity Forms plugin and integrate zapier to store data into a Google spreadsheet when visitors filled
-            out the forms when they visited the landing pages.</p>
+        <li>
+          <figure class="project">
+            <img
+              class="project__thumbnail"
+              src="./images/tvmdb/tvmdb.png"
+              alt="tvmdb website"
+            />
+            <figcaption class="project__content">
+              <div class="project__content-wrapper">
+                <h2 class="project__title">TVMDb</h2>
+                <p>
+                  Browse your favorite movies and tv shows, see what's playing
+                  on theaters and airing on tv, and discover new movies and tv
+                  shows with a list of recommendations.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://tvmdb.netlify.com/"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                  <a
+                    href="https://github.com/Juan-Garcia1/tvmdb"
+                    target="_blank"
+                    class="project-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="project">
+            <img
+              class="project__thumbnail"
+              src="./images/trello/trello-clone.png"
+              alt="Trello"
+            />
+            <figcaption class="project__content">
+              <div class="project__content-wrapper">
+                <h2 class="project__title">Trello Clone</h2>
+                <p>
+                  Organize your day by sorting all your task. Add, edit, delete
+                  your tasks, as well as add notes to each task you create.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://chingu-voyage7.github.io/Geckos-Team-14/"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                  <a
+                    href="https://github.com/chingu-voyage7/Geckos-Team-14/tree/master/src"
+                    target="_blank"
+                    class="project-link"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </figcaption>
+          </figure>
         </li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <ul class="contact-list">
-      <li><a href="https://github.com/Juan-Garcia1" target="_blank" class="contact-list__icon"><i class="fa fa-github"
-            aria-hidden="true"></i></a></li>
-      <li><a href="https://codepen.io/-J0hn-/" target="_blank" class="contact-list__icon"><i class="fa fa-codepen"
-            aria-hidden="true"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/juan-garcia1/" target="_blank" class="contact-list__icon"><i class="fa fa-linkedin"
-            aria-hidden="true"></i></a></li>
-    </ul>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-  <script src="./js/index.js"></script>
-
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"
+      integrity="sha256-Hj2jB3rFu+WApBwdMCleyULImPhUvmdEhYxfW/MQ82Q="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
