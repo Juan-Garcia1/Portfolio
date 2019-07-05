@@ -98,6 +98,13 @@ body {
     center;
 }
 
+.btn {
+  background: $primary-color;
+  color: $secondary-color;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
 .loader {
   position: fixed;
   background: $primary-color;
@@ -135,6 +142,11 @@ body {
   background: url("../images/assets/red_circle.svg") no-repeat top right,
     url("../images/assets/red_stripes.svg") no-repeat bottom left;
   position: relative;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .view-projects-btn {
     position: absolute;
     bottom: 30px;
@@ -164,6 +176,12 @@ body {
       }
     }
   }
+}
+
+.tagline {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  text-align: center;
 }
 
 .projects-section {
@@ -228,6 +246,9 @@ body {
   .social-link {
     font-size: 1.2rem !important;
   }
+  .tagline {
+    width: 70%;
+  }
   .projects-section ul {
     display: flex;
     flex-wrap: wrap;
@@ -259,6 +280,9 @@ body {
 @media screen and (min-width: 1024px) {
   html {
     font-size: 26px;
+  }
+  .resume-btn {
+    font-size: 0.8rem;
   }
 }
 
