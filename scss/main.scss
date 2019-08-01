@@ -192,8 +192,26 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.project {
+.projects-section .btns-wrapper {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  button {
+    background: none;
+    border: 0;
+    color: #fff;
+    padding-bottom: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: 0;
+    font-family: $primary-font;
+  }
+  .active {
+    border-bottom: solid 4px #fff;
+  }
+}
+.project,
+.email {
   margin-bottom: 20px;
   &__thumbnail {
     width: 100%;
@@ -253,7 +271,8 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  .project {
+  .project,
+  .email {
     height: 350px;
     display: flex;
     &__thumbnail {
@@ -268,11 +287,13 @@ body {
       display: flex;
       flex-direction: column;
     }
-    .project-links {
+    .project-links,
+    .email-links {
       margin-top: auto;
     }
   }
-  .projects-section ul li:nth-child(even) .project__content {
+  .projects-section #projects-list li:nth-child(even) .project__content,
+  .projects-section #emails-list li:nth-child(even) .email__content {
     order: -1;
   }
 }
