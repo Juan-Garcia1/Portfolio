@@ -251,6 +251,15 @@ body {
   }
 }
 
+.projects-section .highlight {
+  color: $primary-color;
+  font-weight: 600;
+}
+
+#emails-list {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 22px;

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     emailBtn.addEventListener("click", function() {
       webBtn.classList.remove("active");
       this.classList.add("active");
-      emailsList.style.display = "";
+      emailsList.style.display = "block";
       projectsList.style.display = "none";
     });
   });
