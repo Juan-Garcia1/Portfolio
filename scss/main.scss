@@ -211,6 +211,7 @@ body {
   }
 }
 .project,
+.lander,
 .email {
   margin-bottom: 20px;
   &__thumbnail {
@@ -256,7 +257,8 @@ body {
   font-weight: 600;
 }
 
-#emails-list {
+#emails-list,
+#landers-list {
   display: none;
 }
 
@@ -281,6 +283,7 @@ body {
     flex-wrap: wrap;
   }
   .project,
+  .lander,
   .email {
     height: 350px;
     display: flex;
@@ -297,11 +300,13 @@ body {
       flex-direction: column;
     }
     .project-links,
+    .lander-links,
     .email-links {
       margin-top: auto;
     }
   }
   .projects-section #projects-list li:nth-child(even) .project__content,
+  .projects-section #landers-list li:nth-child(even) .lander__content,
   .projects-section #emails-list li:nth-child(even) .email__content {
     order: -1;
   }
