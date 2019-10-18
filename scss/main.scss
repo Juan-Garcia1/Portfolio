@@ -227,6 +227,7 @@ body {
   }
   &__content {
     background: $secondary-color;
+    flex: 1;
     &-wrapper {
       padding: 22px;
     }
