@@ -185,8 +185,7 @@ body {
 }
 
 .projects-section {
-  background: $primary-color url("../images/assets/white_stripes.svg") no-repeat
-    top left;
+  background-color: $primary-color;
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -279,6 +278,10 @@ body {
   }
   .tagline {
     width: 70%;
+  }
+  .projects-section {
+    background: $primary-color url("../images/assets/white_stripes.svg")
+      no-repeat top left;
   }
   .projects-section ul {
     display: flex;
