@@ -245,6 +245,9 @@ body {
     &:first-child {
       margin-right: 10px;
     }
+    &:nth-child(3) {
+      margin-left: 10px;
+    }
     &:hover {
       background: $secondary-color;
       color: $primary-color;
