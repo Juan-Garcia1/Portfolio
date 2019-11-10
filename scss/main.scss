@@ -29,73 +29,8 @@ figure {
 }
 
 body {
-  font-family: sans-serif;
-  overflow-y: hidden;
-}
-
-.title {
-  font-size: 1.3rem;
   font-family: $primary-font;
-  font-weight: 600;
-  position: relative;
-  &--red {
-    color: $primary-color;
-  }
-  &--white {
-    color: $secondary-color;
-  }
-}
-
-.title--red::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: url("../images/assets/left_red_arrows.svg") no-repeat center
-    center;
-}
-
-.title--red::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: url("../images/assets/right_red_arrows.svg") no-repeat center
-    center;
-}
-
-.title--white::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: url("../images/assets/left_white_arrows.svg") no-repeat center
-    center;
-}
-
-.title--white::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: url("../images/assets/right_white_arrows.svg") no-repeat center
-    center;
+  overflow-y: hidden;
 }
 
 .btn {
@@ -107,7 +42,7 @@ body {
 
 .loader {
   position: fixed;
-  background: $primary-color;
+  background: #000046;
   top: 0;
   left: 0;
   width: 100%;
@@ -122,9 +57,9 @@ body {
     width: 60px;
     height: 60px;
     margin: auto;
-    border: solid 5px white;
-    border-top-color: $primary-color;
-    border-right-color: $primary-color;
+    border: solid 5px #000046;
+    border-top-color: #1cb5e0;
+    border-right-color: #1cb5e0;
     border-radius: 50%;
     animation: rotateIcon 1s linear infinite;
   }
@@ -136,60 +71,59 @@ body {
 
 .hero {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../images/assets/red_circle.svg") no-repeat top right,
-    url("../images/assets/red_stripes.svg") no-repeat bottom left;
+  background: url("../images/Developer.png") no-repeat bottom left / contain;
   position: relative;
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .view-projects-btn {
+  &__social-links {
     position: absolute;
-    bottom: 30px;
-    border: 0px;
-    background: none;
-    text-transform: capitalize;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    outline: 0;
-    cursor: pointer;
-    img {
-      display: block;
-      margin: 8px auto 0 auto;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+  }
+  &__social-link {
+    display: inline-block;
+    color: #000046;
+    &:hover {
+      color: #1cb5e0;
+    }
+    &:not(:last-child) {
+      margin-right: 16px;
     }
   }
-  .social-links {
+  .quote {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    .social-link {
-      color: $primary-color;
-      font-size: 1.5rem;
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    &__text {
+      text-transform: capitalize;
+      font-style: italic;
+    }
+    &__author {
+      color: #1cb5e0;
     }
   }
 }
+.desktop-img {
+  display: none;
+}
 
-.tagline {
-  width: 80%;
-  margin: 0 auto 20px auto;
-  text-align: center;
+.mobile-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .projects-section {
-  background-color: $primary-color;
-  padding: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  min-height: 100vh;
+  background: url("../images/Portfolio.png") no-repeat bottom left / contain;
+  padding: 8% 5%;
+  ul {
+    display: grid;
+    row-gap: 30px;
+  }
 }
 .projects-section .btns-wrapper {
   flex-basis: 100%;
@@ -198,21 +132,25 @@ body {
   button {
     background: none;
     border: 0;
-    color: #fff;
+    color: #000046;
     padding-bottom: 8px;
     font-weight: 600;
     cursor: pointer;
     outline: 0;
     font-family: $primary-font;
+    &:not(.active):hover {
+      color: #1cb5e0;
+    }
   }
   .active {
-    border-bottom: solid 4px #fff;
+    border-bottom: solid 4px #000046;
   }
 }
-.project,
-.lander,
-.email {
-  margin-bottom: 20px;
+.project {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 16px 35px -25px #9194a1;
+  height: 250px;
   &__thumbnail {
     width: 100%;
     height: 100%;
@@ -220,26 +158,41 @@ body {
     object-fit: cover;
   }
   &__title {
-    color: $primary-color;
-    font-family: $primary-font;
     margin-top: 0;
   }
   &__content {
-    background: $secondary-color;
-    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
     &-wrapper {
-      padding: 22px;
+      text-align: center;
     }
   }
-  .project-links {
+  &__background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1cb5e0;
+  }
+  &__links {
     margin-top: 20px;
   }
-  &-link {
+  &__link {
     font-size: 0.8rem;
-    background: $primary-color;
-    color: $secondary-color;
+    background-color: #000046;
+    color: #fff;
     padding: 5px 10px;
-    border: solid 2px $primary-color;
     border-radius: 4px;
     font-family: $primary-font;
     &:first-child {
@@ -249,15 +202,9 @@ body {
       margin-left: 10px;
     }
     &:hover {
-      background: $secondary-color;
-      color: $primary-color;
+      color: #1cb5e0;
     }
   }
-}
-
-.projects-section .highlight {
-  color: $primary-color;
-  font-weight: 600;
 }
 
 #emails-list,
@@ -270,75 +217,85 @@ body {
   html {
     font-size: 22px;
   }
-  .title {
-    font-size: 1.8rem;
-  }
-  .view-projects-btn {
-    font-size: 0.8rem;
-  }
-  .social-link {
-    font-size: 1.2rem !important;
-  }
-  .tagline {
-    width: 70%;
-  }
+
   .projects-section {
-    background: $primary-color url("../images/assets/white_stripes.svg")
-      no-repeat top left;
-  }
-  .projects-section ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .project,
-  .lander,
-  .email {
-    height: 350px;
-    display: flex;
-    &__thumbnail {
-      width: 50%;
+    padding: 5% 8%;
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
     }
+  }
+  .projects-section .btns-wrapper button {
+    font-size: 0.85em;
+  }
+  .project {
     &__title {
-      margin-bottom: 0;
+      font-size: 0.95em;
     }
-    &__content-wrapper {
-      padding-bottom: 30px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    &__link {
+      font-size: 0.65em;
     }
-    .project-links,
-    .lander-links,
-    .email-links {
-      margin-top: auto;
-    }
-  }
-  .projects-section #projects-list li:nth-child(even) .project__content,
-  .projects-section #landers-list li:nth-child(even) .lander__content,
-  .projects-section #emails-list li:nth-child(even) .email__content {
-    order: -1;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  html {
-    font-size: 26px;
+  // html {
+  //   font-size: 26px;
+  // }
+  .mobile-img {
+    display: none;
   }
-  .resume-btn {
-    font-size: 0.8rem;
+  .desktop-img {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  .hero {
+    &__social-links {
+      position: fixed;
+      top: 50px;
+      left: 40px;
+    }
+    &__social-link {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    .quote {
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      text-align: right;
+    }
+  }
+  .projects-section {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
 }
 
 @media screen and(min-width:2560px) {
   html {
-    font-size: 30px;
+    font-size: 35px;
   }
-  .projects-section {
-    padding-left: 10%;
-    padding-right: 10%;
+  .hero__social-links {
+    left: 80px;
   }
   .project {
     height: 450px;
+    &__links {
+      margin-top: 1.5em;
+    }
+    &__link {
+      font-size: 0.75em;
+      padding: 0.75em 1.7em;
+      border-radius: 6px;
+    }
   }
 }
 
