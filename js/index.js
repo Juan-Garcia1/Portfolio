@@ -61,20 +61,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const projects = document.querySelectorAll(".project");
 
-[...projects].forEach(function(project) {
-  const tl = new TimelineMax({ paused: true });
-  const projectBackground = project.querySelector(".project__background");
-  const projectContent = project.querySelector(".project__content");
+// [...projects].forEach(function(project) {
+//   const tl = new TimelineMax({ paused: true });
+//   const projectBackground = project.querySelector(".project__background");
+//   const projectContent = project.querySelector(".project__content");
 
-  tl.to(projectBackground, 0.5, {
-    scale: 18
-  }).to(projectContent, 0.4, { opacity: 1 }, "+=.04");
+//   tl.to(projectBackground, 0.5, {
+//     scale: 18
+//   }).to(projectContent, 0.4, { opacity: 1 }, "+=.04");
 
-  project.addEventListener("mouseenter", function() {
-    tl.play().timeScale(1.3);
-  });
+//   project.addEventListener("mouseenter", function() {
+//     tl.play().timeScale(1.3);
+//   });
 
-  project.addEventListener("mouseleave", function() {
-    tl.reverse().timeScale(1.7);
-  });
-});
+//   project.addEventListener("mouseleave", function() {
+//     tl.reverse().timeScale(1.7);
+//   });
+// });
