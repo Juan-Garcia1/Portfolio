@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const landersList = document.querySelector("#landers-list");
     const emailsList = document.querySelector("#emails-list");
     const wpList = document.querySelector("#wordpress-list");
+    const modal = document.querySelector(".modal");
+    const closeModalBtn = document.querySelector(".modal__close-btn");
+    const playBtns = document.querySelectorAll(".js-play-btn");
+    let iframe = document.createElement("iframe");
 
     // when web button is clicked, display list of web projects only
     webBtn.addEventListener("click", function() {
@@ -56,6 +60,37 @@ document.addEventListener("DOMContentLoaded", function() {
       emailsList.style.display = "none";
       wpList.style.display = "grid";
     });
+
+    [...playBtns].forEach(playBtn => {
+      playBtn.addEventListener("click", function() {
+        toggleModal();
+        // prevent page from scrolling when modal is open
+        document.querySelector("body").style.overflow = "hidden";
+        // get youtube link
+        const video = this.closest(".project").dataset.video;
+
+        iframe.src = video;
+        addIframeAtrributes();
+        modal.querySelector(".modal__content").append(iframe);
+      });
+    });
+
+    closeModalBtn.addEventListener("click", function() {
+      toggleModal();
+      document.querySelector("body").style.overflow = "scroll";
+      iframe.src = "";
+    });
+
+    function addIframeAtrributes() {
+      iframe.width = "100%";
+      iframe.height = "100%";
+      iframe.frameBorder = 0;
+      iframe.allowFullscreen = true;
+      iframe.allow = "autoplay; picture-in-picture";
+    }
+    function toggleModal() {
+      modal.classList.toggle("modal--active");
+    }
   });
 });
 

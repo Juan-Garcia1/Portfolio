@@ -103,10 +103,16 @@
       </div>
       <ul id="projects-list">
         <li>
-          <figure class="project">
+          <figure
+            class="project"
+            data-video="https://www.youtube.com/embed/T807GTbzriM?autoplay=1&controls=0"
+          >
             <div class="project__thumbnail"
-              ><img src="./images/formula1/formula-1.png" alt="formula-1"
-            /></div>
+              ><img src="./images/formula1/formula-1.png" alt="formula-1" />
+              <button class="project__play-btn js-play-btn"
+                ><img src="./images/play-button.svg" alt="play button"
+              /></button>
+            </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
                 <h2 class="project__title">Modern Carousel</h2>
@@ -123,12 +129,13 @@
                   <li class="project__skill">JavaScript</li>
                 </ul>
                 <div class="project__links">
-                  <a
+                  <!-- <a
                     href="https://juan-garcia1.github.io/formula-1/"
                     target="_blank"
                     class="project__link"
                     >View</a
-                  >
+                  > -->
+                  <a class="project__link js-play-btn">View Demo</a>
                   <a
                     href="https://github.com/Juan-Garcia1/formula-1"
                     target="_blank"
@@ -141,48 +148,52 @@
           </figure>
         </li>
         <li>
-          <figure class="project">
+          <figure
+            class="project"
+            data-video="https://www.youtube.com/embed/8S_crM-VkLg?autoplay=1&controls=0"
+          >
             <div class="project__thumbnail">
               <img src="./images/rosa/restaurant.png" alt="the rosa" />
+              <button class="project__play-btn js-play-btn"
+                ><img src="./images/play-button.svg" alt="play button"
+              /></button>
             </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
-                <h2 class="project__title">Rosa</h2>
-                <p class="project__role"
-                  ><strong>Role: </strong>Front End Developer</p
-                >
+                <h2 class="project__title">Laravoso</h2>
+                <p class="project__role"><strong>Role: </strong>Full-Stack</p>
                 <p class="project__description">
-                  Rosa is a restaurant, bar and coffee roastery located on a
-                  busy corner site in Farringdon’s Exmouth Market. For those
-                  with pure food indulgence in mind, take a look at their full
-                  menu and make a reservation for an intimate and relaxed dining
-                  experience.
+                  A full-stack application where you can login as an
+                  administrator to maintain the restaurant's menu by creating,
+                  updating and deleting both menu items and categories.
                 </p>
                 <ul class="project__skills-list">
+                  <li class="project__skill">Laravel</li>
                   <li class="project__skill">FlexBox</li>
                   <li class="project__skill">Grid</li>
                   <li class="project__skill">SCSS</li>
                   <li class="project__skill">GSAP</li>
                 </ul>
                 <div class="project__links">
-                  <a
+                  <!-- <a
                     href="https://juan-garcia1.github.io/restaurant/"
                     target="_blank"
                     class="project__link"
                     >View</a
-                  >
-                  <a
+                  > -->
+                  <a class="project__link js-play-btn">View Demo</a>
+                  <!-- <a
                     href="https://github.com/Juan-Garcia1/restaurant"
                     target="_blank"
                     class="project__link"
                     >Code</a
-                  >
-                  <a
+                  > -->
+                  <!-- <a
                     href="https://github.com/Juan-Garcia1/restaurant-theme"
                     target="_blank"
                     class="project__link"
                     >WP Code</a
-                  >
+                  > -->
                 </div>
               </div>
             </figcaption>
@@ -211,9 +222,15 @@
           </figure>
         </li> -->
         <li>
-          <figure class="project">
+          <figure
+            class="project"
+            data-video="https://www.youtube.com/embed/8eCxvgpoNeQ?autoplay=1&controls=0"
+          >
             <div class="project__thumbnail">
               <img src="./images/gqlmdb/gqlmdb.png" alt="gqlmdb" />
+              <button class="project__play-btn js-play-btn">
+                <img src="./images/play-button.svg" alt="play button" />
+              </button>
             </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
@@ -232,12 +249,13 @@
                   <li class="project__skill">GraphQL</li>
                 </ul>
                 <div class="project__links">
-                  <a
+                  <!-- <a
                     href="https://graphqlmdb.netlify.com/"
                     target="_blank"
                     class="project__link"
                     >View</a
-                  >
+                  > -->
+                  <a class="project__link js-play-btn">View Demo</a>
                   <a
                     href="https://github.com/Juan-Garcia1/graphqlmdb"
                     target="_blank"
@@ -656,6 +674,17 @@
         </li>
       </ul>
     </section>
+
+    <div class="modal">
+      <div class="container">
+        <div class="modal__wrapper">
+          <button class="modal__close-btn">
+            <img src="./images/close-btn.svg" alt="" />
+          </button>
+          <div class="modal__content"> </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
