@@ -28,79 +28,27 @@
         <p>Loading</p>
       </div>
     </div>
+
     <div class="hero">
-      <img
-        src="./images/homepage-img-mobile.png"
-        alt="mobile homepage image"
-        class="mobile-img"
-      />
-      <img
-        src="./images/homepage-img.svg"
-        alt="desktop homepage image"
-        class="desktop-img"
-      />
-      <div class="hero__social-links">
-        <a
-          href="https://github.com/Juan-Garcia1"
-          target="_blank"
-          class="hero__social-link"
-          ><i class="fa fa-github hero__social-link-icon"></i
-        ></a>
-        <a
-          href="https://codepen.io/-J0hn-/pens/popular"
-          target="_blank"
-          class="fa fa-codepen hero__social-link"
-          ><i class="hero__social-link-icon"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/juan-garcia1/"
-          target="_blank"
-          class="hero__social-link"
-          ><i class="fa fa-linkedin hero__social-link-icon"></i
-        ></a>
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__header"
+            >Making <span class="hero__header-highlight">Designs</span> Come To
+            Life</h1
+          >
+          <h2 class="hero__sub-header">Front End Web Developer</h2>
+        </div>
       </div>
-      <div class="quote">
-        <p class="quote__text">Good artist copy, Great artist steal</p>
-        <span class="quote__author">&mdash; Steve Jobs</span>
-      </div>
+      <a href="#projects">
+        <div class="scroll-icon"></div>
+      </a>
     </div>
 
-    <section class="services-section">
-      <ul class="services-list">
-        <li class="service service--front-end">
-          <div class="service__content">
-            <h3 class="service__header">Front End</h3>
-            <p class="service__body"
-              >Convert designs into responsive semantic websites.</p
-            >
-          </div>
-        </li>
-        <li class="service service--wordpress">
-          <div class="service__content">
-            <h3 class="service__header">WordPress</h3>
-            <p class="service__body"
-              >Convert designs into custom WordPress themes.</p
-            >
-          </div>
-        </li>
-        <li class="service service--spa">
-          <div class="service__content">
-            <h3 class="service__header">SPA</h3>
-            <p class="service__body"
-              >Create Single Page Applications using the React framework.</p
-            >
-          </div>
-        </li>
-      </ul>
+    <section id="mid-section">
+      <img src="./images/dots.svg" alt="" />
     </section>
 
     <section class="projects-section" id="projects">
-      <div class="btns-wrapper">
-        <button class="active" id="web-btn">Web</button>
-        <button id="landers-btn">Landing Pages</button>
-        <button id="email-btn">Email</button>
-        <button id="wordpress-btn">WordPress</button>
-      </div>
       <ul id="projects-list">
         <li>
           <figure
@@ -110,85 +58,37 @@
             <div class="project__thumbnail"
               ><img src="./images/marosautosales.jpg" alt="maro's auto sales" />
               <button class="project__play-btn js-play-btn"
-                ><img src="./images/play-button.svg" alt="play button"
+                ><img src="./images/play-btn.svg" alt="play button"
               /></button>
             </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
                 <h2 class="project__title">Maro's Auto Sales Dealership</h2>
-                <p class="project__role"
-                  ><strong>Role: </strong>Full-Stack Developer</p
-                >
+                <p class="project__role">Full-Stack Developer</p>
                 <p class="project__description">
                   After opening a second location, Maro’s Auto Sales was in need
                   of a complete overhaul to their site. Users can easily browse
-                  and filter by make or body type. The owner can then login as
-                  an admin to manage his inventory and see data based on the
-                  vehicles they've sold.
+                  & filter by make or body type. The owner can then login as an
+                  admin to manage his inventory & see data based on the vehicles
+                  they've sold.
                 </p>
                 <ul class="project__skills-list">
                   <li class="project__skill">Laravel</li>
                   <li class="project__skill">MySQL</li>
                   <li class="project__skill">BootStrap</li>
                 </ul>
-                <div class="project__links">
-                  <a class="project__link js-play-btn">View Demo</a>
-                  <a
-                    href="https://github.com/Juan-Garcia1/maros-auto-sales"
-                    target="_blank"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
+                <a
+                  href="https://github.com/Juan-Garcia1/maros-auto-sales"
+                  target="_blank"
+                  title="view code"
+                  class="project__link"
+                  ><i class="fa fa-github project__link-icon"></i
+                ></a>
               </div>
             </figcaption>
           </figure>
         </li>
-        <li>
-          <figure
-            class="project"
-            data-video="https://www.youtube.com/embed/T807GTbzriM?autoplay=1&controls=0"
-          >
-            <div class="project__thumbnail"
-              ><img src="./images/formula1/formula-1.png" alt="formula-1" />
-              <button class="project__play-btn js-play-btn"
-                ><img src="./images/play-button.svg" alt="play button"
-              /></button>
-            </div>
-            <figcaption class="project__content">
-              <div class="project__content-wrapper">
-                <h2 class="project__title">Modern Carousel</h2>
-                <p class="project__role"
-                  ><strong>Role: </strong>Front End Developer</p
-                >
-                <p class="project__description">
-                  A more modern carousel best suited for displaying latest blog
-                  posts on your front page.
-                </p>
-                <ul class="project__skills-list">
-                  <li class="project__skill">SCSS</li>
-                  <li class="project__skill">Grid</li>
-                  <li class="project__skill">JavaScript</li>
-                </ul>
-                <div class="project__links">
-                  <!-- <a
-                    href="https://juan-garcia1.github.io/formula-1/"
-                    target="_blank"
-                    class="project__link"
-                    >View</a
-                  > -->
-                  <a class="project__link js-play-btn">View Demo</a>
-                  <a
-                    href="https://github.com/Juan-Garcia1/formula-1"
-                    target="_blank"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
+
         <li>
           <figure
             class="project"
@@ -197,40 +97,30 @@
             <div class="project__thumbnail">
               <img src="./images/rosa/restaurant.png" alt="the rosa" />
               <button class="project__play-btn js-play-btn"
-                ><img src="./images/play-button.svg" alt="play button"
+                ><img src="./images/play-btn.svg" alt="play button"
               /></button>
             </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
                 <h2 class="project__title">Larascape</h2>
-                <p class="project__role"><strong>Role: </strong>Full-Stack</p>
+                <p class="project__role">Full-Stack Developer</p>
                 <p class="project__description">
                   A full-stack application where you can login as an
                   administrator to maintain the restaurant's menu by creating,
-                  updating and deleting both menu items and categories.
+                  updating & deleting both menu items & categories.
                 </p>
                 <ul class="project__skills-list">
                   <li class="project__skill">Laravel</li>
                   <li class="project__skill">MySQL</li>
-                  <li class="project__skill">Grid</li>
-                  <li class="project__skill">SCSS</li>
                   <li class="project__skill">GSAP</li>
                 </ul>
-                <div class="project__links">
-                  <!-- <a
-                    href="https://juan-garcia1.github.io/restaurant/"
-                    target="_blank"
-                    class="project__link"
-                    >View</a
-                  > -->
-                  <a class="project__link js-play-btn">View Demo</a>
-                  <a
-                    href="https://github.com/Juan-Garcia1/larascape"
-                    target="_blank"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
+                <a
+                  href="https://github.com/Juan-Garcia1/larascape"
+                  target="_blank"
+                  title="view code"
+                  class="project__link"
+                  ><i class="fa fa-github project__link-icon"></i
+                ></a>
               </div>
             </figcaption>
           </figure>
@@ -265,40 +155,30 @@
             <div class="project__thumbnail">
               <img src="./images/gqlmdb/gqlmdb.png" alt="gqlmdb" />
               <button class="project__play-btn js-play-btn">
-                <img src="./images/play-button.svg" alt="play button" />
+                <img src="./images/play-btn.svg" alt="play button" />
               </button>
             </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
                 <h2 class="project__title">GQLMDb</h2>
-                <p class="project__role"
-                  ><strong>Role: </strong>React Developer</p
-                >
+                <p class="project__role">React Developer</p>
                 <p class="project__description">
                   GQLMDb is a single page application using The Movie DB api.
                   Users can browse their favorite movies, see what's playing in
-                  theaters and see what others recommend.
+                  theaters & see what others recommend.
                 </p>
                 <ul class="project__skills-list">
                   <li class="project__skill">React</li>
                   <li class="project__skill">Apollo</li>
                   <li class="project__skill">GraphQL</li>
                 </ul>
-                <div class="project__links">
-                  <!-- <a
-                    href="https://graphqlmdb.netlify.com/"
-                    target="_blank"
-                    class="project__link"
-                    >View</a
-                  > -->
-                  <a class="project__link js-play-btn">View Demo</a>
-                  <a
-                    href="https://github.com/Juan-Garcia1/graphqlmdb"
-                    target="_blank"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
+                <a
+                  href="https://github.com/Juan-Garcia1/graphqlmdb"
+                  target="_blank"
+                  title="view code"
+                  class="project__link"
+                  ><i class="fa fa-github project__link-icon"></i
+                ></a>
               </div>
             </figcaption>
           </figure>
@@ -307,45 +187,41 @@
           <figure class="project">
             <div class="project__thumbnail">
               <img src="./images/trello/trello-clone.png" alt="Trello clone" />
+              <a
+                class="project__play-btn"
+                href="https://chingu-voyage7.github.io/Geckos-Team-14/"
+                target="_blank"
+                ><img src="./images/play-btn.svg" alt="play button"
+              /></a>
             </div>
             <figcaption class="project__content">
               <div class="project__content-wrapper">
                 <h2 class="project__title">Trello Clone</h2>
-                <p class="project__role"
-                  ><strong>Role: </strong>React Developer</p
-                >
+                <p class="project__role">React Developer</p>
                 <p class="project__description">
-                  This is a clone of the popular project management app. Users
-                  can create cards for their tasks and organize these into
-                  customizable lists. Cards can be dragged and dropped into
-                  different positions and lists based on progress. Users also
-                  have the ability to customize the look of the board by
-                  selecting an alternate background.
+                  A clone of the popular project management app. Users can
+                  create cards for their tasks & organize these into
+                  customizable lists. Cards can be dragged & dropped into
+                  different positions & lists based on progress.
                 </p>
                 <ul class="project__skills-list">
                   <li class="project__skill">React</li>
                   <li class="project__skill">Redux</li>
+                  <li class="project__skill">SCSS</li>
                 </ul>
-                <div class="project__links">
-                  <a
-                    href="https://chingu-voyage7.github.io/Geckos-Team-14/"
-                    target="_blank"
-                    class="project__link"
-                    >View</a
-                  >
-                  <a
-                    href="https://github.com/chingu-voyage7/Geckos-Team-14/tree/master/src"
-                    target="_blank"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
+                <a
+                  href="https://github.com/chingu-voyage7/Geckos-Team-14/tree/master/src"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="fa fa-github project__link-icon"></i
+                ></a>
               </div>
             </figcaption>
           </figure>
         </li>
       </ul>
-      <ul id="landers-list">
+      <!-- will use later -->
+      <!-- <ul id="landers-list">
         <li>
           <figure class="project">
             <div class="project__thumbnail">
@@ -498,8 +374,9 @@
             </figcaption>
           </figure>
         </li>
-      </ul>
-      <ul id="emails-list">
+      </ul> -->
+      <!-- will use later  -->
+      <!-- <ul id="emails-list">
         <li>
           <figure class="project">
             <div class="project__thumbnail">
@@ -641,7 +518,7 @@
             </figcaption>
           </figure>
         </li>
-        <!-- <li>
+        <li>
           <figure class="project">
             <div class="project__thumbnail">
               <img
@@ -672,9 +549,10 @@
               </div>
             </figcaption>
           </figure>
-        </li> -->
-      </ul>
-      <ul id="wordpress-list">
+        </li>
+      </ul> -->
+      <!-- will use later -->
+      <!-- <ul id="wordpress-list">
         <li>
           <figure class="project">
             <div class="project__thumbnail">
@@ -708,8 +586,27 @@
             </figcaption>
           </figure>
         </li>
-      </ul>
+      </ul> -->
     </section>
+
+    <footer>
+      <div class="container">
+        <ul class="social-list">
+          <li class="social"
+            ><a href="" class="social__link"
+              ><i class="fa fa-codepen social__icon"></i></a
+          ></li>
+          <li class="social"
+            ><a href="" class="social__link"
+              ><i class="fa fa-github social__icon"></i></a
+          ></li>
+          <li class="social"
+            ><a href="" class="social__link"
+              ><i class="fa fa-linkedin social__icon"></i></a
+          ></li>
+        </ul>
+      </div>
+    </footer>
 
     <div class="modal">
       <div class="container">
@@ -722,16 +619,6 @@
       </div>
     </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"
-      integrity="sha256-Hj2jB3rFu+WApBwdMCleyULImPhUvmdEhYxfW/MQ82Q="
-      crossorigin="anonymous"
-    ></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
